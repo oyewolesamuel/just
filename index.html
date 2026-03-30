@@ -9,6 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/b11fd35892.js" crossorigin="anonymous"></script>
     <style>
+        body {
+            overflow-x: hidden;
+            /* Prevent horizontal scroll */
+        }
+
         .nav-link {
             color: #333 !important;
             font-weight: 600;
@@ -62,6 +67,32 @@
             border-radius: 5px;
             border: 1px solid #ccc;
         }
+
+        .newsletter .input-group {
+            flex-wrap: wrap;
+        }
+
+        section,
+        footer,
+        nav {
+            max-width: 100vw;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .newsletter .input-group {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .newsletter .input-group input,
+        .newsletter .input-group button {
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -99,7 +130,6 @@
         <div class="container">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
-
                     <img class="img-fluid" src="/Media/image 15.png" alt="Delicious food" />
                 </div>
                 <div class="col-lg-6">
@@ -152,6 +182,7 @@
             </div>
         </div>
     </section>
+
     <section class="py-5" style="background: #f9f9f9" id="products">
         <div class="container">
             <h3 class="fw-bold text-center mb-5">Our Product</h3>
@@ -161,7 +192,8 @@
 
                 <div class="col-sm-6 col-lg-4">
                     <div class="card border-0 rounded-3 shadow-sm h-100">
-                        <img src="/Media/image 2.png" class="card-img-top rounded-top-3 img-fluid" alt="Amala & Ewedu" />
+                        <img src="/Media/image 2.png" class="card-img-top rounded-top-3 img-fluid"
+                            alt="Amala & Ewedu" />
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h6 class="fw-bold mb-1">Amala & Ewedu</h6>
@@ -213,7 +245,6 @@
 
             <p class="cat-label">Inter-Continental Foods</p>
             <div class="row g-3 mb-5">
-
 
                 <div class="col-sm-6 col-lg-4">
                     <div class="card border-0 rounded-3 shadow-sm h-100">
@@ -333,7 +364,8 @@
                     <a href="#" class="btn btn-order fw-bold px-5 rounded-pill text-dark">Order Now</a>
                 </div>
                 <div class="col-lg-6 text-center">
-                    <img class="img-fluid" src="/Media/undraw_on_the_way_re_swjt 2.png" alt="Delivery" style=" max-height: 300px;" />
+                    <img class="img-fluid" src="/Media/undraw_on_the_way_re_swjt 2.png" alt="Delivery"
+                        style=" max-height: 300px;" />
                 </div>
             </div>
         </div>
@@ -350,7 +382,7 @@
                     <p class="text-muted mb-4">
                         Be the first to get the latest update from us
                     </p>
-                    <div class="input-group d-flex gap-3" style="max-width: 400px">
+                    <div class="input-group" style="max-width: 400px">
                         <input type="email" class="form-control" placeholder="Your Email" />
                         <button class="btn text-white fw-semibold rounded-3 border-0"
                             style="background:#FFA500;">Subscribe</button>
@@ -398,7 +430,7 @@
             <p> Built with love by <strong>OHYEE Tech</strong> © 2026 Copyright: <a href="#"
                     class="text-light text-decoration-none">Just Food</a></p>
         </div>
-    </footer> 
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
